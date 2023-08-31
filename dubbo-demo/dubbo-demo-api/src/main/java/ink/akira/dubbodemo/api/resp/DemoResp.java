@@ -1,11 +1,11 @@
 package ink.akira.dubbodemo.api.resp;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-public class DemoResp {
+import java.io.Serializable;
+
+@Data
+public class DemoResp implements Serializable {
     private int id;
     private String name;
     private int age;
